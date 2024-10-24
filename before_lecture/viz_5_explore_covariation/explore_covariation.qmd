@@ -290,6 +290,17 @@ alt.Chart(df).mark_point().encode(
 
 ## Do-pair-share
 
+```{python}
+
+alt.Chart((penguins).mark_bar().encode(
+    alt.X('year:Q', scale =alt.Scale(zero=True)),
+    alt.Y('body_mass_g:Q', stack=None),
+    ).properties(width=400,height=300)
+)
+
+
+```
+
 We are now going to transition from making plots to teach **ourselves** to making plots for an audience.
 
 Are penguins getting heavier (`body_mass_g`) over time? 
